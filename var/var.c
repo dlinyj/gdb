@@ -3,10 +3,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <errno.h>
+#include "print_count.h"
 
-void print_count(int count) {
-	printf("count=%d\n", count);
-}
 
 int print_var (int var){
 	static int count=0;
@@ -30,5 +28,3 @@ int main(int argc, char * argv[])
 	print_var(var);
 	return 0;
 }
-
-//
